@@ -276,7 +276,6 @@ body {
 
 @media (max-width: 768px) {
 
-    /* Disable parallax on mobile */
     .parallax1,
     .parallax2 {
         background-attachment: fixed;
