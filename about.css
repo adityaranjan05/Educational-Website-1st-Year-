@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    scroll-behavior: smooth;
+}
+
+.parallax1 {
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)),
+        url(images/about1.avif);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)),
+        url(images/about2.avif);
+    /* min-height: 500px; */
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top {
+    height: 100vh;
+    position: flex;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: orange;
+    box-shadow: 0 25px 60px rgba(255, 166, 0, 0.98);
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.about {
+    font-size: 28px;
+    top: 40%;
+    opacity: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: orange;
+    animation: fadein 1.1s ease-in forwards;
+    text-shadow: 0 0 10px black;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    margin-left: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+
+.content .paragraph {
+    font-size: 18px;
+    color: #f4f2f8;
+    background: linear-gradient(145deg,
+            rgba(78, 52, 130, 0.96),
+            rgba(42, 25, 85, 0.92),
+            rgba(120, 80, 200, 0.95));
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+    box-shadow:
+        0 22px 50px rgba(0, 0, 0, 0.75),
+        0 0 32px rgba(160, 120, 255, 0.35);
+    border-radius: 22px;
+    padding: 40px;
+    line-height: 1.8;
+    max-width: 1200px;
+    width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: auto;
+}
+
+.content .paragraph:hover {
+    background-position: right center;
+    box-shadow:
+        0 28px 60px rgba(0, 0, 0, 0.85),
+        0 0 45px rgba(170, 130, 255, 0.55);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.content audio {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.content audio::-webkit-media-controls-panel {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content .image {
+    opacity: 0;
+    animation: slideIn 1.2s ease-out 0.3s forwards;
+}
+
+.content .image img {
+    width: 700px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.content .image img:hover {
+    transform: scale(1.001);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    /* margin-top: 0px; */
+}
+
+.footer h4 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff7171;
+}
+
+.footer p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.footer .icons {
+    font-size: 32px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer .icons a {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.footer .icons a:hover {
+    color: orange;
+    transform: scale(1.5);
+}
+
+.footer .credit {
+    font-size: 18px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+}
+
+.footer .credit i {
+    color: #ff0000;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Disable parallax on mobile (important) */
+    .parallax1,
+    .parallax2 {
+        background-attachment: fixed;
+        min-height: 60vh;
+        height: auto;
+    }
+
+    /* Fix top section height & center heading */
+    .top {
+        min-height: 100svh;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 0 16px;
+    }
+
+    /* About heading centering fix */
+    .about {
+        margin-top: 40vh;
+        position: static;      /* removes top:40% issue */
+        font-size: 22px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Navbar spacing */
+    .navbar ul {
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 13px;
+    }
+
+    /* Main content layout */
+    .content {
+        margin: 40px 0;
+        padding: 0 16px;
+
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    /* Paragraph box */
+    .content .paragraph {
+        width: 100%;
+        max-width: 100%;
+        font-size: 15px;
+        padding: 24px;
+    }
+
+    /* Image scaling */
+    .content .image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Audio player */
+    .content audio {
+        max-width: 100%;
+    }
+
+    /* Footer */
+    .footer h4 {
+        font-size: 26px;
+    }
+
+    .footer p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .footer .icons {
+        font-size: 24px;
+        gap: 20px;
+    }
+
+    .footer .credit {
+        font-size: 14px;
+    }
+}
