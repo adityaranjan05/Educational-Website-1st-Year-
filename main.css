@@ -1,9 +1,9 @@
-* {
+*{
     padding: 0;
     margin: 0;
 }
 
-body {
+body{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.3)50%, rgba(0, 0, 0, 0.3)50%), url(images/index.jpg);
@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-.top .navbar ul {
+.top .navbar ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -48,14 +48,11 @@ body {
 .top .navbar ul li a::after {
     content: "";
     position: absolute;
-    left: 50%;
-    /* start at center */
+    left: 50%;  /* start at center */
     bottom: -3px;
-    width: 0;
-    /* start invisible */
+    width: 0;   /* start invisible */
     height: 2px;
-    background: orange;
-    /* underline color */
+    background: orange;   /* underline color */
     transform: translateX(-50%);
     transition: width 0.3s ease-in-out;
 }

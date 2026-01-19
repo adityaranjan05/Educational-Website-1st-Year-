@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0%;
     padding: 0%;
 }
@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.background video {
+.background video{
     position: absolute;
     
     min-width: 100%;
@@ -20,7 +20,7 @@
 
 }
 
-.content {
+.content{
     font-size: 50px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
