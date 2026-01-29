@@ -29,18 +29,6 @@ body {
     min-width: 400px;
 }
 
-#navbar {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 15px 20px;
-    border-radius: 50px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    justify-content: center;
-
-}
 
 button{
     color: #555;
@@ -55,6 +43,26 @@ button{
     align-items: center;
     gap: 8px;
     font-size: 1.5rem;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#summary-btn {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+
 }
 
 #summary-btn:hover {
@@ -133,12 +141,18 @@ video {
     color: #667eea;
 }
 
+#next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #next-video{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 30px;
-    background: white;
+    padding: 12px 20px;
+    background: orange;
     border-radius: 30px;
     margin-top: 1.5vh;
     transition: transform all 2s ease;

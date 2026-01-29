@@ -29,7 +29,13 @@ body {
     min-width: 400px;
 }
 
-#navbar {
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#summary-btn {
     display: flex;
     gap: 20px;
     margin-bottom: 30px;
@@ -133,12 +139,18 @@ video {
     color: #667eea;
 }
 
+#next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #next-video{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12px 30px;
-    background: white;
+    background: orange;
     border-radius: 30px;
     margin-top: 1.5vh;
     transition: transform all 2s ease;
