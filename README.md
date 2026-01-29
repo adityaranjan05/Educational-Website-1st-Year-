@@ -31,6 +31,7 @@ Here're some of the project's best features:
 
 - HTML5
 - CSS3
+- JavaScript 
 
 
 ---
