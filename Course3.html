@@ -6,18 +6,41 @@
     <title>Causes Of Climate Change</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="Course3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<div class="video-container">
-    <h1>Impacts of Climate Change on Earth & Life</h1>
-    <video controls playsinline controlslist="download">
-        <source src="videos/Course3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    
-</div>
+<div id="container">
+        <div class="video-container">
+            <h1>Impact Of Climate Change On Earth & Life</h1>
+            <video controls playsinline controlslist="download">
+                <source src="videos/Course3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="content">
+            <div id="navbar">
+                <button id="summary-btn" onclick="showSummary3()">Summary</button>
+            </div>
+            <div id="text3" style="display: none;">
+                <h2>Course Summary</h2>
+                <p>Ecosystems and wildlife are also heavily affected by climate change. Many plant and animal species struggle to adapt to changing temperatures and habitats, leading to loss of biodiversity and extinction of vulnerable species. Coral reefs are bleaching due to warmer oceans, and forests are experiencing more wildfires and pest outbreaks.</p>
+
+                <p>Deforestation is another major cause of climate change. Trees absorb carbon dioxide from the atmosphere, but when forests are cut down for agriculture, urban development, or logging, this carbon is released back into the air. As a result, the Earth’s natural ability to regulate temperature is reduced.</p>
+
+                <p>Human life is equally impacted by climate change. Changes in climate affect agriculture, water availability, and food security, while rising temperatures increase health risks such as heat-related illnesses and the spread of diseases. Overall, climate change threatens the balance of nature and the well-being of future generations, making urgent action essential.</p>
+            </div>
+        </div>
+        <div id="next">
+            <button id="next-video" onclick="video4()">NEXT</button>
+        </div>
+    </div>
 
 </body>
+<script src="script.js"></script>
 </html>

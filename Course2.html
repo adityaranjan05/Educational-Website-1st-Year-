@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Causes Of Climate Change</title>
+    <title>Climate Change Basics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="Course2.css">
 </head>
 
 <body>
 
-<div class="video-container">
-    <h1>Causes Of Climate Change</h1>
-    <video controls playsinline controlslist="download">
-        <source src="videos/Course2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    
-</div>
+    <div id="container">
+        <div class="video-container">
+            <h1>Causes Of Climate Change</h1>
+            <video controls playsinline controlslist="download">
+                <source src="videos/Course2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="content">
+            <div id="navbar">
+                <button id="summary-btn" onclick="showSummary2()">Summary</button>
+            </div>
+            <div id="text2" style="display: none;">
+                <h2>Course Summary</h2>
+                <p>Climate change is mainly caused by human activities that increase the concentration of greenhouse gases in the atmosphere. The largest contributor is the burning of fossil fuels such as coal, oil, and natural gas for electricity, transportation, and industries. These activities release carbon dioxide, which traps heat and leads to global warming.</p>
+
+                <p>Deforestation is another major cause of climate change. Trees absorb carbon dioxide from the atmosphere, but when forests are cut down for agriculture, urban development, or logging, this carbon is released back into the air. As a result, the Earth’s natural ability to regulate temperature is reduced.</p>
+
+                <p>Industrial processes, agriculture, and waste management also contribute to climate change. Factories emit greenhouse gases, livestock produce methane, and excessive use of chemical fertilizers releases nitrous oxide. Together, these human-driven activities intensify the greenhouse effect, leading to rising temperatures, changing weather patterns, and long-term impacts on the planet.</p>
+            </div>
+        </div>
+        <div id="next">
+            <button id="next-video" onclick="video3()">NEXT</button>
+        </div>
+    </div>
 
 </body>
+<script src="script.js"></script>
+
 </html>

@@ -6,18 +6,41 @@
     <title>Causes Of Climate Change</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="Course5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<div class="video-container">
-    <h1>Climate Change and Weather Patterns</h1>
-    <video controls playsinline controlslist="download">
-        <source src="videos/Course5.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    
-</div>
+<div id="container">
+        <div class="video-container">
+            <h1>Climate Change and Weather Patterns</h1>
+            <video controls playsinline controlslist="download">
+                <source src="videos/Course5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="content">
+            <div id="navbar">
+                <button id="summary-btn" onclick="showSummary5()">Summary</button>
+            </div>
+            <div id="text5" style="display: none;">
+                <h2>Course Summary</h2>
+                <p>Climate change has a strong influence on weather patterns across the world. As global temperatures rise, the Earth’s atmosphere and oceans store more heat and moisture, which alters normal weather conditions. This leads to more frequent and intense weather events such as heatwaves, heavy rainfall, droughts, cyclones, and floods.</p>
+
+                <p>Changes in climate also disrupt seasonal weather cycles. Some regions experience longer summers and shorter winters, while others face unpredictable rainfall and shifting monsoon patterns. These changes affect agriculture, water availability, and natural ecosystems, making it difficult for plants, animals, and humans to adapt.</p>
+
+                <p>Overall, climate change is making weather more extreme and less predictable. Understanding the link between climate change and weather patterns is essential for preparing communities, protecting livelihoods, and reducing the risks associated with extreme weather events.</p>
+            </div>
+        </div>
+        <div id="next">
+            <button id="next-video" onclick="video6()">NEXT</button>
+        </div>
+    </div>
 
 </body>
+<script src="script.js"></script>
 </html>

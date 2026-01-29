@@ -6,18 +6,41 @@
     <title>Causes Of Climate Change</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="Course4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<div class="video-container">
-    <h1>Role of Education in Climate Awareness</h1>
-    <video controls playsinline controlslist="download">
-        <source src="videos/Course4.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    
-</div>
+<div id="container">
+        <div class="video-container">
+            <h1>Role of Education in Climate Awareness</h1>
+            <video controls playsinline controlslist="download">
+                <source src="videos/Course4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="content">
+            <div id="navbar">
+                <button id="summary-btn" onclick="showSummary4()">Summary</button>
+            </div>
+            <div id="text4" style="display: none;">
+                <h2>Course Summary</h2>
+                <p>Education plays a vital role in building awareness about climate change and its impacts on the planet. By learning about environmental issues, students and communities gain a clear understanding of the causes and consequences of climate change. This knowledge helps people recognize the importance of protecting natural resources and adopting sustainable lifestyles.</p>
+
+                <p>Through schools, colleges, and public awareness programs, education encourages critical thinking and responsible decision-making. It empowers individuals to take practical actions such as conserving energy, reducing waste, and supporting renewable resources. Environmental education also inspires innovation by motivating young people to develop solutions to climate-related challenges.</p>
+
+                <p>Overall, education acts as a powerful tool for long-term climate awareness. By shaping attitudes, values, and behaviors, it creates informed citizens who can contribute to climate action, influence policy decisions, and work toward a more sustainable and resilient future.</p>
+            </div>
+        </div>
+        <div id="next">
+            <button id="next-video" onclick="video5()">NEXT</button>
+        </div>
+    </div>
 
 </body>
+<script src="script.js"></script>
 </html>
