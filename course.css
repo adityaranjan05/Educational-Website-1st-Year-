@@ -192,9 +192,9 @@ body {
 .course-card .free-course {
     padding: 6px 14px;
     width: 70px;
+    margin-top: auto;
+    align-self: flex-start; 
     color: black;
-    display: inline-block;
-    margin-top: 15%;
     background: greenyellow;
     border-radius: 14px;
     font-family: "Poppins", sans-serif;
