@@ -152,7 +152,7 @@ body {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    min-height: 18rem;
+    min-height: 20rem;
     min-width: 17rem;
     /* height: 25vh; */
     padding: 25px;
