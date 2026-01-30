@@ -273,7 +273,7 @@
 
  .footer .icons a:hover {
      color: orange;
-     transform: scale(1.5) smooth;
+     transform: scale(1.5);
  }
 
  .footer .credit {
