@@ -31,8 +31,8 @@ body {
 
 #navbar{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 #summary-btn {
@@ -143,6 +143,25 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 6rem;
+}
+
+#go-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    background: orange;
+    border-radius: 30px;
+    margin-top: 1.5vh;
+    transition: transform all 2s ease;
+}
+
+#go-back:hover{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
 #finish-course{

@@ -82,6 +82,10 @@ const showSummary6 = () => {
 
 // next video function
 
+const goBack = () => {
+    window.location.href = "course.html";
+}
+
 const video2 = () => {
     window.location.href = "Course2.html";
 }
